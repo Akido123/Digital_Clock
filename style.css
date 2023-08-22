@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+  background-color: rgb(26, 26, 57);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title{
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+.other_clock{
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  display: flex;
+  color: white;
+  width: 900px;
+  justify-content: space-around;
+  position: relative;
+  bottom: 50%;
+}
+
+.time{
+  font-size: large;
+}
+
+.state{
+  font-size: 50px;
+}

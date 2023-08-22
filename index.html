@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.7.0/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.7.0/cdn/shoelace-autoloader.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Digital Clock</title>
+  <script src="./script.js" defer type="module"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="title">My Digital Clock</div>
+  <div class="other_clock">
+    <sl-progress-ring 
+    id="hour-ring-value"
+    value="25" 
+    style="
+    --size: 200px;
+    --track-color: rgba(255, 192, 203, 0.81);
+    --indicator-color: deeppink;
+    ">
+      <div id="hours"></div>
+      <div class="time">Hours</div>
+    </sl-progress-ring>
+    <sl-progress-ring
+    id="minute-ring-value" 
+    value="25" 
+    style="
+    --size: 200px;
+    --track-color: rgba(255, 255, 146, 0.776);
+    --indicator-color: rgb(255, 255, 0);
+    ">
+      <div id="minutes"></div>
+      <div class="time">Minutes</div>
+    </sl-progress-ring>
+    <sl-progress-ring 
+    id="second-ring-value"
+    value="25" 
+    style="
+    --size: 200px;
+    --track-color: rgba(0, 203, 0, 0.684);
+    --indicator-color: rgb(2, 218, 2);
+    ">      
+      <div id="seconds"></div>
+      <div class="time">Seconds</div>
+    </sl-progress-ring>
+    <div class="state" id="time"></div>
+  </div>
+</body>
+</html>
